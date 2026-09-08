@@ -51,7 +51,7 @@ progressant considéralement.
 
 ## LA STACK OU TECHNOLOGIE UTILISEE
 
-``md
+```md
         | Entité | Technologie | Statut |
         | --- | ---| --- |
         | Backend-end | Django + DRF(python) | ✅ |
