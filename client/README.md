@@ -12,7 +12,7 @@ Voici la liste de ces projets:
 
 1. Site de restauration simple permettant de lister les plats et leurs prix + description.
     Celle-ci, était ma toute prémière app full-stack, tecno utilisée:
-        ``md
+        ```md
         | Back-end | front-end | Niveau |
         | --- | ---| --- |
         | Django | HTML/CSS/JS | Débutant |
@@ -25,7 +25,7 @@ Voici la liste de ces projets:
     J'ai récu plein de burgs puisque je ne savais pas trop ce que je fesais. Donc j'ai dû stoppé la production du projet.
 
     Stack utilisée:
-    ``md
+    ```md
         | Back-end | front-end | Niveau |
         | --- | ---| --- |
         | Django | HTML/CSS/JS | Débutant + |
@@ -38,7 +38,7 @@ Voici la liste de ces projets:
     Cette appli web est toujors en productions.
 
     La stack utilisée:
-    ``md
+    ```md
         | Back-end | front-end | Niveau |
         | --- | ---| --- |
         | Django + DRF | React-Js | Intermédiare |
