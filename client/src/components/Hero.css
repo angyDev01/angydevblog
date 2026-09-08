@@ -1,0 +1,113 @@
+:root {
+--color-primary: #2563EB;
+--color-primary-light: #3B82F6;
+--color-dark: #0F172A;
+--color-dark-menu: #071A33;
+--color-text: #172033;
+--color-text-secondary: #64748B;
+--color-text-muted: #94A3B8;
+--color-background: #F8FAFC;
+--color-white: #FFFFFF;
+--color-border: #E2E8F0;
+--color-grid: #DCE8F7;
+--radius-sm: 8px;
+--radius-md: 14px;
+--radius-lg: 20px;
+--badge: #135bf759;
+--box-shadow: #a89b9be0;
+}
+
+
+.hero{
+    background-color: var(--color-background);
+    display: flex;
+    float: left;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+    border-radius: var(--radius-lg);
+    box-shadow: 5px 10px 10px var(--box-shadow);
+}
+
+/* Style de la zone de presentation */
+.hero .know-more{
+    width: 50%;
+    padding: 10px;
+}
+
+.know-more .title{
+    background-color: var(--badge);
+    padding: 5px;
+    border-radius: var(--radius-lg);
+    border: #2563EB 1px solid;
+    font-weight: 500;
+}
+
+.title  .FaHandPaper{
+    margin-right: 10px;
+    color: var(--color-background);
+} 
+
+.know-more h4{
+    font-size: 2rem;
+    color: #172033;
+    margin: 10px;
+    font-weight: 900;
+}
+
+.know-more h4 .blue-sl{
+    color: #2563EB;
+}
+
+.know-more .citation{
+    color: #071A33;
+    font-weight: 500;
+}
+
+.know-more .citation i{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.know-more .objectifText{
+    width: 90%;
+}
+
+
+.hero .articleLink{
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    padding: 5px;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.articleLink .FaArrowRight, .FaBars{
+    margin: 0 8px;
+    font-weight: 800;
+}
+
+.hero .articleLink:hover{
+    font-size: 18px;
+    color: #071A33;
+    transition: all 1s ease-in-out;
+}
+
+.hero .profil-pic{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.profil-pic img{
+    width: 100%;
+    max-height: 300px;
+    border-radius: var(--radius-lg);
+    
+}
+
