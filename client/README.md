@@ -57,7 +57,7 @@ progressant considéralement.
         | Backend-end | Django + DRF(python) | ✅ |
         | Front-end | HTML/CSS/JS | ✅ |
         | Techno-front | React-Js | ✅ |
-
+```
 
 # React + Vite
 

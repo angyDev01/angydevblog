@@ -1,0 +1,165 @@
+:root {
+--color-primary: #2563EB;
+--color-primary-light: #3B82F6;
+--color-dark: #0F172A;
+--color-dark-menu: #071A33;
+--color-text: #172033;
+--color-text-secondary: #64748B;
+--color-text-muted: #94A3B8;
+--color-background: #F8FAFC;
+--color-white: #FFFFFF;
+--color-border: #E2E8F0;
+--color-grid: #DCE8F7;
+--radius-sm: 8px;
+--radius-md: 14px;
+--radius-lg: 20px;
+--badge: #135bf759;
+--box-shadow: #a89b9be0;
+--Icon-color: rgb(247, 165, 14);
+}
+
+
+
+/* Design le conteneur qui contient tout les élement de la homePage */
+.article-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style du contenur des articles */
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 78%;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.articles .content{
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+}
+
+/* Design du conteneur de l'image */
+.articles .content-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    background-color: blue;
+    overflow: hidden;
+    /* border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg); */
+    border-radius: 10px;
+}
+
+/* Dimensionnement de l'image */
+.content img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 150px;
+}
+
+/* Style du conteneur des textes et les meta données */
+.content .contenu{
+    padding: 0 20px;
+}
+
+/* Style de la catégorie */
+
+.contenu .category{
+    padding: 5px;
+    background-color: var(--badge);
+    border-radius: var(--radius-lg);
+    width: fit-content;
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+.category .FaHandPointer{
+    margin-right: 10px;
+    color: var(--Icon-color);
+}
+
+/* content-title style*/
+
+.contenu .content-title{
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+
+/* Meta données style */
+
+.content .meta-data-contener{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Admin data style */
+
+.meta-data-contener .admin{
+    display: flex;
+}
+
+.meta-data-contener .admin img{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999999999px;
+}
+
+.meta-data-contener .meta-data{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.meta-data-contener .date{
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+
+/* Article link style*/
+
+.meta-data-contener .article-link{
+    color: var(--color-primary);
+}
+
+.meta-data-contener .article-link:hover{
+    transform: translateX(8px) ;
+    transition: all 1s ease-in-out .2ms;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .articles{
+        grid-template-columns: 1fr ;
+        width: 90%;
+    }
+
+    /* Style du conteneur des textes et les meta données */
+    .content .contenu{
+        padding: 0 10px;
+    }
+
+    
+}

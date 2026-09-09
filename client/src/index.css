@@ -26,4 +26,5 @@ body{
   linear-gradient(to bottom, var(--color-primary-light) 1px, transparent 1px);
   height: 100vh;
   background-size: 25px 25px;
+  background-attachment: fixed;
 }
