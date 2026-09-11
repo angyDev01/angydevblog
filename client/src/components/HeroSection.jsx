@@ -1,25 +1,26 @@
 import { useState } from "react";
 import { FaBars, FaArrowRight, FaHandPaper,  FaHome } from 'react-icons/fa';
-import profilPic from "../assets/profilPic.png"
-import heroImg from "../assets/heroImg.png"
-import "./Hero.css"
+import profilPic from "../assets/profilPic.png";
+import HeroImage from "../assets/HeroImage.png";
+import "../styles/HeroSection.css";
 
 
-export function Hero(){
-    const [slogan, useSlogan] = useState([
-        { 
+export function HeroSection(){
+    const [slogan, setSlogan] = useState([
+        {   
+            id:0,
             blackSlogan:" When u're a dream, ",
             blueSlogan:"make it real !"}
     ])
     return(
         <div className="hero">
-            <di className="know-more">
+            <div className="know-more">
                 <span className="title">
                     <FaHandPaper className="FaHandPaper" />
                     Bienvenue sur mon blog
                     </span>
                 {slogan.map(el =>(
-                    <h4>
+                    <h4 key={el.id}>
                         {el.blackSlogan}<br/><span className="blue-sl">{el.blueSlogan}</span>
                     </h4>
                 ))}
@@ -36,9 +37,9 @@ export function Hero(){
                     Voir les articles
                     <FaArrowRight size={10} className="FaArrowRight"/>
                 </a>
-            </di>
+            </div>
             <div className="profil-pic">
-                <img src={heroImg} alt="" />
+                <img src={HeroImage} alt="" />
             </div>
         </div>
     )

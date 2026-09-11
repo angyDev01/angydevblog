@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { Hero } from "../components/Hero";
+import { HeroSection } from "../components/HeroSection";
+import { Link } from "react-router-dom";
 import "../styles/HomePage.css"
 import heroImg from "../assets/heroImg.png";
 import { FaArrowRight, FaHandPointer } from "react-icons/fa";
@@ -63,7 +64,7 @@ export function HomePage(){
     ]);
     return(
         <div className="article-container">
-            <Hero />
+            <HeroSection />
             
             
             <div className="articles">
@@ -98,9 +99,10 @@ export function HomePage(){
                                 <p  className="date">
                                         {el.date}
                                     </p>
-                                <a href="" className="article-link" >
-                                    <FaArrowRight size={12} className="FaArrowRigh" />
-                                </a>
+                                <Link to={`/articles/${el.id}`} className="article-link" >
+                                    voir plus
+                                    <FaArrowRight size={12} className="FaArrowRight" />
+                                </Link>
                             </span>
                             
                             
