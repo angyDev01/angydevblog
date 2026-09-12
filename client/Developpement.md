@@ -12,18 +12,12 @@ Mais j'ai fini par trouver ma solution, en essayant de styler pour voir si cela 
 2. Dimentionnement de l'image principale.
 Au lieu de :
 
-bash
-    .hero{
-        display: flex;
-        justify-content: space-between;
-    }
+```bash```
+    ```.hero{ display: flex; justify-content: space-between }```
 
 et moi j'ai fait:
-bash
-    .hero{
-        display: flex;
-        float: left;
-    }```
+```bash```
+    ```.hero{ display: flex; float: left;}```
 Cà fonctionne, mais l'image s'ettend et perd sa valeur initiale.
 
 
@@ -37,9 +31,9 @@ Pour ce jour 2, le but est de créer la carte des articles.
 
     #### Solution
     Mais j'ai fini par trouver un belle parade.
-    J'ai d'abord, commencer par afficher du contenu statique sans boucler sur les object JS.
+    J'ai d'abord, commencer par afficher du contenu statique sans boucler sur les ```object JS```.
     Lorsque j'ai trouvé le design que je cherchais, j'ai conservé un seul conteneur d'article pour afficher les éléments
-    en bouclant sur mon object JS avec (uState) et (.map()).
+    en bouclant sur mon object JS avec ```(uState)``` et ```(.map())```.
 
 - Coté style:
 
@@ -54,13 +48,13 @@ Pour ce jour 2, le but est de créer la carte des articles.
 
 ### Jour - #03 (Navbar)
 Contre toute attente, à partir de cet composant de navigation, tout a commencé à me metrre hors d'etat normal.
-J'avais jamais eu à plonger entièrement en react ainsi. Chaque fois que j'avais affaire à une fonctionnalité comme le menu de navigation et les lien en react, je ne cherchais pas forcrmrnt loin. J'applique simple ce que j'arrive à faire en HTML/CSS/JS classique et je m'ensortais, mais jusqu'ici, je viens de comprendre le phénomène le plus merveilleux quand j'utlise la puissance des bibliothèques incluses.
+J'avais jamais eu à plonger entièrement en react ainsi. Chaque fois que j'avais affaire à une fonctionnalité comme le menu de navigation et les lien en react, je ne cherchais pas forcrmrnt loin. J'applique simple ce que j'arrive à faire en ```HTML/CSS/JS``` classique et je m'ensortais, mais jusqu'ici, je viens de comprendre le phénomène le plus merveilleux quand j'utlise la puissance des bibliothèques incluses.
 
 J'ai utilisé :
     1. BrowserRouter
     2. Routes
     3. Route
-de la bibliothèque react-router-dom
+de la bibliothèque ```@react-router-dom```
 
 En savoir plus via: [react-router-dom](https://www.npmjs.com/package/react-router-dom?activeTab=readme)
 
@@ -70,7 +64,7 @@ Le jour était plus épineux que le precedent jour.
 Comment récupérer un unique article selon son id ? Là était la question.
 
 Alors, je me souviens avoir faire cà une fois en django lors de la conception de mon tout premier blog. C'était pas si compliqué que ca.
-En JSX, c'est légèrement pareil sauf que là, on a comme toujours, besoin d'installer des biblios, puis de gérer la récuperation d'id unique avec *useParameters() de (react-router-dom) puis convertir cette chaine de caractère obtenue en nombre afin de faire correspondre exactement à l'id rechercher.
+En ```JSX```, c'est légèrement pareil sauf que là, on a comme toujours, besoin d'installer des biblios, puis de gérer la récuperation d'id unique avec ```*useParameters()``` de ```(react-router-dom)``` puis convertir cette chaine de caractère obtenue en nombre afin de faire correspondre exactement à l'id rechercher.
 
 
 ### Jour - #05
@@ -81,7 +75,7 @@ Quelle est difference entre les liens de navigation entre composants du projet e
 la balise: ```<a href='/lien-de-redirection'> mon lien classique </a>```
 
 La bibliothèque react-router-dom fournie des outils hyper cool à savoir:
-1. Link -> joue le rôle de la balise ```<a>``` classique 
-2. BrowserRouter -> rend la navigation entre composant plus fluide sans avoir à recharger la page toute entière comme le faire la balise ```<a>``` classique. ce qui donne un avantage encore plus intéressante, car l'UX est bien fait grace à la recharge instantanée de composants.
+1. ```Link``` -> joue le rôle de la balise ```<a>``` classique 
+2. ```BrowserRouter``` -> rend la navigation entre composant plus fluide sans avoir à recharger la page toute entière comme le faire la balise ```<a>``` classique. ce qui donne un avantage encore plus intéressante, car l'UX est bien fait grace à la recharge instantanée de composants.
 
 Pour l'instant, c'est que j'ai usé, donc j'en parlerai au fur et à mesure que je découvre l'écosystème.
