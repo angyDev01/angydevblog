@@ -12,7 +12,7 @@ Voici la liste de ces projets:
 
 1. Site de restauration simple permettant de lister les plats et leurs prix + description.
     Celle-ci, était ma toute prémière app full-stack, tecno utilisée:
-        ```md
+    ```md
         | Back-end | front-end | Niveau |
         | --- | ---| --- |
         | Django | HTML/CSS/JS | Débutant |
