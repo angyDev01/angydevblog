@@ -51,9 +51,9 @@ Contre toute attente, à partir de cet composant de navigation, tout a commencé
 J'avais jamais eu à plonger entièrement en react ainsi. Chaque fois que j'avais affaire à une fonctionnalité comme le menu de navigation et les lien en react, je ne cherchais pas forcrmrnt loin. J'applique simple ce que j'arrive à faire en ```HTML/CSS/JS``` classique et je m'ensortais, mais jusqu'ici, je viens de comprendre le phénomène le plus merveilleux quand j'utlise la puissance des bibliothèques incluses.
 
 J'ai utilisé :
-    1. BrowserRouter
-    2. Routes
-    3. Route
+1. BrowserRouter
+2. Routes
+3. Route
 de la bibliothèque ```@react-router-dom```
 
 En savoir plus via: [react-router-dom](https://www.npmjs.com/package/react-router-dom?activeTab=readme)
