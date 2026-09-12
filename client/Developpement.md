@@ -74,7 +74,7 @@ En ```JSX```, c'est légèrement pareil sauf que là, on a comme toujours, besoi
 Quelle est difference entre les liens de navigation entre composants du projet en react et l'utilisation des balises classique telle que 
 la balise: ```<a href='/lien-de-redirection'> mon lien classique </a>```
 
-La bibliothèque react-router-dom fournie des outils hyper cool à savoir:
+La bibliothèque ```react-router-dom``` fournie des outils hyper cool à savoir:
 1. ```Link``` -> joue le rôle de la balise ```<a>``` classique 
 2. ```BrowserRouter``` -> rend la navigation entre composant plus fluide sans avoir à recharger la page toute entière comme le faire la balise ```<a>``` classique. ce qui donne un avantage encore plus intéressante, car l'UX est bien fait grace à la recharge instantanée de composants.
 
