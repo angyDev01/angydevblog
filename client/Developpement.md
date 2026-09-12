@@ -52,4 +52,36 @@ Pour ce jour 2, le but est de créer la carte des articles.
 
 
 
-### Jour - #03
+### Jour - #03 (Navbar)
+Contre toute attente, à partir de cet composant de navigation, tout a commencé à me metrre hors d'etat normal.
+J'avais jamais eu à plonger entièrement en react ainsi. Chaque fois que j'avais affaire à une fonctionnalité comme le menu de navigation et les lien en react, je ne cherchais pas forcrmrnt loin. J'applique simple ce que j'arrive à faire en HTML/CSS/JS classique et je m'ensortais, mais jusqu'ici, je viens de comprendre le phénomène le plus merveilleux quand j'utlise la puissance des bibliothèques incluses.
+
+J'ai utilisé :
+    1. BrowserRouter
+    2. Routes
+    3. Route
+de la bibliothèque react-router-dom
+
+En savoir plus via: [react-router-dom](https://www.npmjs.com/package/react-router-dom?activeTab=readme)
+
+### Jour - #04 (Creation de la page detail article)
+
+Le jour était plus épineux que le precedent jour.
+Comment récupérer un unique article selon son id ? Là était la question.
+
+Alors, je me souviens avoir faire cà une fois en django lors de la conception de mon tout premier blog. C'était pas si compliqué que ca.
+En JSX, c'est légèrement pareil sauf que là, on a comme toujours, besoin d'installer des biblios, puis de gérer la récuperation d'id unique avec *useParameters() de (react-router-dom) puis convertir cette chaine de caractère obtenue en nombre afin de faire correspondre exactement à l'id rechercher.
+
+
+### Jour - #05
+
+# A retenir 🔵
+
+Quelle est difference entre les liens de navigation entre composants du projet en react et l'utilisation des balises classique telle que 
+la balise: <a href='/lien-de-redirection'>mon lien classique</a>
+
+La bibliothèque react-router-dom fournie des outils hyper cool à savoir:
+1. Link -> joue le rôle de la balise <a> classique 
+2. BrowserRouter -> rend la navigation entre composant plus fluide sans avoir à recharger la page toute entière comme le faire la balise <a> classique. ce qui donne un avantage encore plus intéressante, car l'UX est bien fait grace à la recharge instantanée de composants.
+
+Pour l'instant, c'est que j'ai usé, donc j'en parlerai au fur et à mesure que je découvre l'écosystème.
